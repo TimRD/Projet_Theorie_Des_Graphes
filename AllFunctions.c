@@ -1,6 +1,6 @@
 #include "AllFunctions.h"
 
-int circuit(int tableau[50][50], int s) // Fonction qui determine si le graphe contient un circuit ou non
+int circuit(int tableau2[50][50], int s) // Fonction qui determine si le graphe contient un circuit ou non
 {
     int somme = 0;
     int m = 0;
@@ -8,15 +8,6 @@ int circuit(int tableau[50][50], int s) // Fonction qui determine si le graphe c
     int i, j; //deux entiers, compteurs
     int tabsortie[100] =  {0};
     int tabsortie2[100] = {0};
-    int tableau2[50][50];
-
-    for(i = 0; i < s; i++)
-    {
-        for(j = 0; j < s; j++)
-        {
-            tableau2[i][j] = tableau[i][j];
-        }
-    }
 
 
     do
@@ -160,10 +151,7 @@ void ouverture_fichier(char TextNum[]){ // fonction qui permet l'ouverture de fi
             printf("\n");
         }
         printf("\n");
-
         circuit(tableau2, s);
-
-
     }
 
 
