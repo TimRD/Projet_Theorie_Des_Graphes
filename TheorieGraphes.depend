@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1527201581 source:c:\users\timot\documents\theographe\theoriegraphes\allfunctions.c
+	"AllFunctions.h"
+
+1525905634 c:\users\timot\documents\theographe\theoriegraphes\allfunctions.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1527198232 source:c:\users\timot\documents\theographe\theoriegraphes\main.c
+	<stdio.h>
+	<stdlib.h>
+	"AllFunctions.h"
+
