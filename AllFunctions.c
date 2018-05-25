@@ -1,4 +1,8 @@
 #include "AllFunctions.h"
+int tableau3[50][50]={0};
+void rang(int tableau2[50][50], int s){
+    printf("On est dans la fonction rang \n");
+}
 
 int circuit(int tableau2[50][50], int s) // Fonction qui determine si le graphe contient un circuit ou non
 {
@@ -59,6 +63,7 @@ int circuit(int tableau2[50][50], int s) // Fonction qui determine si le graphe 
         }
         else if(somme == 0) {
             printf("\nIl n'y pas de circuit\n");
+            rang(tableau3, s);
             stop = 0;
         }
         somme = 0;
@@ -151,6 +156,14 @@ void ouverture_fichier(char TextNum[]){ // fonction qui permet l'ouverture de fi
             printf("\n");
         }
         printf("\n");
+        //On crée un tableau3 pour stocker les valeurs de la matrice adjacence
+        for(i = 0; i < s; i++)
+        {
+            for(j = 0; j < s; j++)
+            {
+                tableau3[i][j]=tableau2[i][j];
+            }
+        }
         circuit(tableau2, s);
     }
 
